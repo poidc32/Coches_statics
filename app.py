@@ -5,15 +5,6 @@ import streamlit as st
 car_data = pd.read_csv('C:/Users/Olagu/OneDrive/Escritorio/TRIPLE_TEN/SPRINT_6/Coches_statics/vehicles_us.csv') 
 st.header('Vehiculos en estados unidos') #encabezado
 
-table_button = st.button('Mostrar tabla de contenido') # crear un botón
-        
-if table_button: # al hacer clic en el botón
-            # escribir un mensaje
-            st.write('MOstrando tabla para el conjunto de datos de anuncios de venta de coches')
-            
-            # mostrar la tabla
-            st.table(car_data)
-
 build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram: # si la casilla de verificacion esta seleccionada
